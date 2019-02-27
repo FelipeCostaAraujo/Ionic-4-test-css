@@ -1,0 +1,13 @@
+ion-content{
+    ion-fab{
+        border: 1px solid;
+        border-radius: 30px;
+        div{
+            margin:5px;
+            ion-fab-button{
+                size: 10px;
+            }
+        }
+
+    }
+}

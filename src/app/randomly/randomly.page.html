@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>randomly</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="scene">
+    <div class="lava-lamp" style="--height: 400; --width: 150;">
+      <div class="lava-lamp__main">
+        <div class="lava-lamp__glass">
+            <div class="lava-lamp__lava">
+              <svg>
+                <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                <circle class="blob" r="31.5" cx="97" cy="400" style="--skewX: 4; --skewY: 0; --height: 63; --speed: 9; --delay: -1; --direction: alternate;"></circle>
+                <circle class="blob" r="18" cx="109" cy="400" style="--skewX: 3; --skewY: -2; --height: 36; --speed: 38; --delay: -6; --direction: alternate-reverse;"></circle>
+                <circle class="blob" r="19" cx="146" cy="400" style="--skewX: 4; --skewY: 2; --height: 38; --speed: 10; --delay: -6; --direction: alternate-reverse;"></circle>
+              </svg>
+            </div>
+            <div class="lava-lamp__lava">
+              <svg>
+                <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                <circle class="blob" r="15.5" cx="142" cy="400" style="--skewX: 2; --skewY: 0; --height: 31; --speed: 30; --delay: -5; --direction: alternate-reverse;"></circle>
+                <circle class="blob" r="27.5" cx="47" cy="400" style="--skewX: 4; --skewY: 0; --height: 55; --speed: 49; --delay: -6; --direction: alternate-reverse;"></circle>
+                <circle class="blob" r="35.5" cx="105" cy="400" style="--skewX: -4; --skewY: 2; --height: 71; --speed: 35; --delay: -2; --direction: alternate-reverse;"></circle>
+                <circle class="blob" r="40.5" cx="117" cy="400" style="--skewX: -2; --skewY: 4; --height: 81; --speed: 17; --delay: -2; --direction: alternate-reverse;"></circle>
+              </svg>
+            </div>
+            <div class="lava-lamp__lava">
+              <svg>
+                <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                <circle class="blob" r="36" cx="3" cy="400" style="--skewX: -1; --skewY: 4; --height: 72; --speed: 22; --delay: 0; --direction: alternate-reverse;"></circle>
+                <circle class="blob" r="19.5" cx="78" cy="400" style="--skewX: -3; --skewY: -5; --height: 39; --speed: 48; --delay: -7; --direction: alternate-reverse;"></circle>
+              </svg>
+            </div>
+            <div class="lava-lamp__lava">
+              <svg>
+                <ellipse class="blob blob--top" cx="35" cy="0" rx="35" ry="10"></ellipse>
+                <ellipse class="blob blob--bottom" cx="75" cy="270" rx="75" ry="10"></ellipse>
+                <circle class="blob" r="27" cx="92" cy="400" style="--skewX: -1; --skewY: 2; --height: 54; --speed: 28; --delay: -7; --direction: alternate-reverse;"></circle>
+              </svg>
+            </div>
+        </div>
+      </div>
+      <div class="lava-lamp__base"></div>
+    </div>
+    <svg style="position: absolute; left: 100%;">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="BLUR"></feGaussianBlur>
+          <feColorMatrix in="BLUR" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="GOO"></feColorMatrix>
+          <feBlend in="SourceGraphic" in2="goo"></feBlend>
+        </filter>
+      </defs>
+    </svg>
+  </div>
+</ion-content>
